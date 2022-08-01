@@ -1334,6 +1334,12 @@ h1, h2, h3, h4 {
   position: absolute;
   left: 2rem;
   top: 1rem;
+  display: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__menus-close {
+    display: block;
+  }
 }
 .header__menus {
   display: flex;
@@ -1390,6 +1396,12 @@ h1, h2, h3, h4 {
   position: absolute;
   left: 2rem;
   top: 1rem;
+  display: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__nav-close {
+    display: block;
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .header__nav {
