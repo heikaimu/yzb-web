@@ -1,0 +1,1175 @@
+<!--
+ * @Author: Yaowen Liu
+ * @Date: 2022-03-07 09:45:10
+ * @LastEditors: Yaowen Liu
+ * @LastEditTime: 2022-07-28 09:51:59
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 强制Chromium内核，作用于360浏览器、QQ浏览器等国产双核浏览器 -->
+  <meta name="renderer" content="webkit" />
+  <!-- 强制Chromium内核，作用于其他双核浏览器 -->
+  <meta name="force-rendering" content="webkit" />
+  <!-- 如果有安装 Google Chrome Frame 插件则强制为Chromium内核，否则强制本机支持的最高版本IE内核，作用于IE浏览器 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <title>首页</title>
+  <meta name="description" content="这是一个描述" />
+  <meta name="keywords" content="这是一些关键字" />
+  <meta name="author" content="LYW" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="./style/bootstrap.css" /> -->
+  <link rel="stylesheet" href="./style/swiper.min.css" />
+  <link rel="stylesheet" href="./style/animation.css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" />
+  <link rel="stylesheet" href="./style/app.css" />
+  <script src="./js/browser.js"></script>
+</head>
+
+<body id="app">
+
+  <header class="header">
+
+    <div class="header__container">
+
+      <div class="header__left">
+        <a href="" class="header__logo">
+          <img src="./images/logo.png" alt="">
+        </a>
+      </div>
+
+      <div class="header__right">
+
+        <span class="header__menus-open iconfont icon-zengjia" data-menus-open>&nbsp;</span>
+        <div class="header__menus" data-menus-wrapper>
+          <span class="header__menus-close iconfont icon-shanchu" data-menus-close>&nbsp;</span>
+          <div class="web-menus" data-menus-content>
+            <a href="" class="web-menus__item">
+              <span class="iconfont icon-w_xuexiao"></span>
+              教室预约
+            </a>
+            <a href="" class="web-menus__item">
+              <span class="iconfont icon-mimadenglu"></span>
+              学院办公系统
+            </a>
+            <a href="" class="web-menus__item">
+              <span class="iconfont icon-dengzi2"></span>
+              研究生座位申请
+            </a>
+            <a href="" class="web-menus__item">
+              <span class="iconfont icon-jiaoshi"></span>
+              教师后台登录
+            </a>
+            <a href="" class="web-menus__item">
+              <span class="iconfont icon-yingyu"></span>
+              英文版
+            </a>
+            <span class="divider"></span>
+            <div class="popover">
+              <div class="popover__title">
+                <p class="web-menus__item">
+                  <span class="iconfont icon-sousuoxiao"></span>
+                  搜索
+                </p>
+              </div>
+              <div class="popover__content">
+                <div class="search-input">
+                  <input type="text" class="search-input__input" placeholder="搜索关键字">
+                  <a href="" class="search-input__button"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="header__nav-open iconfont icon-daohang" data-nav-open>&nbsp;</span>
+        <div class="header__nav" data-nav-wrapper>
+          <span class="header__nav-close iconfont icon-shanchu" data-nav-close>&nbsp;</span>
+          <div class="web-nav" data-nav-content>
+            <ul class="web-nav__1-list" data-nav>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./" class="web-nav__1-link active" data-nav-lv1-text>学校概况</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./" class="web-nav__1-link" data-nav-lv1-text>师资力量</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./single_page.html" class="web-nav__1-link web-nav__1-link--arrow" data-nav-lv1-text>人才培养</a>
+                <span class="web-nav__1-open iconfont icon-plus" data-nav-lv2-open></span>
+                <ul class="web-nav__2-list" data-nav-lv2-wrapper>
+                  <li class="web-nav__2-item" data-nav-lv2>
+                    <a href="./teacher_list.html" class="web-nav__2-link web-nav__2-link--arrow">三级菜单啊</a>
+                    <span class="web-nav__2-open iconfont icon-plus" data-nav-lv3-open></span>
+                    <nav class="web-nav__3-list" data-nav-lv3-wrapper>
+                      <a href="/" class="web-nav__3-link">三级菜单三级菜单三级菜单</a>
+                      <a href="/" class="web-nav__3-link">三级菜单三级菜单三级菜单</a>
+                      <a href="/" class="web-nav__3-link">三级菜单</a>
+                      <a href="/" class="web-nav__3-link">三级菜单</a>
+                    </nav>
+                  </li>
+                  <li class="web-nav__2-item" data-nav-lv2>
+                    <a href="./teacher_list.html" class="web-nav__2-link">航次观测</a>
+                  </li>
+                  <li class="web-nav__2-item" data-nav-lv2>
+                    <a href="./article_list.html" class="web-nav__2-link">自动观测</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./teacher_list.html" class="web-nav__1-link" data-nav-lv1-text>科学研究</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./article_list.html" class="web-nav__1-link" data-nav-lv1-text>党建思政</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./article_list.html" class="web-nav__1-link" data-nav-lv1-text>院友天地</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./article_list.html" class="web-nav__1-link" data-nav-lv1-text>科普园地</a>
+              </li>
+              <li class="web-nav__1-item" data-nav-lv1>
+                <a href="./article_list.html" class="web-nav__1-link" data-nav-lv1-text>合作交流</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- banner -->
+  <section class="section-banner">
+    <div class="swiper" id="bannerSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/banner1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/banner2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/banner3.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination" id="bannerPagination"></div>
+
+
+    </div>
+    <div class="section-banner__button section-banner__button--prev">
+      <span class="iconfont icon-zuojiantou_huaban" id="bannerPrev"></span>
+    </div>
+    <div class="section-banner__button section-banner__button--next">
+      <span class="iconfont icon-youjiantou_huaban" id="bannerNext"></span>
+    </div>
+  </section>
+
+
+  <!-- 综合新闻 -->
+  <section class="section-news">
+    <div class="container">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="iconfont icon-xinwen"></span>
+          <span class="heading__text">综合新闻</span>
+        </h2>
+        <a href="" class="more-button">查看更多</a>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="section-news__left">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" role="group">
+                  <div class="news-image-card">
+                    <div class="news-image-card__cover">
+                      <img src="./images/banner1.jpg" alt="">
+                    </div>
+                    <div class="news-image-card__info">
+                      <h2 class="news-image-card__title">
+                        奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                      </h2>
+                      <span class="news-image-card__date">2022/02/01</span>
+                    </div>
+                    <a href="" class="news-image-card__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" role="group">
+                  <div class="news-image-card">
+                    <div class="news-image-card__cover">
+                      <img src="./images/banner2.jpg" alt="">
+                    </div>
+                    <div class="news-image-card__info">
+                      <h2 class="news-image-card__title">
+                        奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                      </h2>
+                      <span class="news-image-card__date">2022/02/01</span>
+                    </div>
+                    <a href="" class="news-image-card__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" role="group">
+                  <div class="news-image-card">
+                    <div class="news-image-card__cover">
+                      <img src="./images/banner3.jpg" alt="">
+                    </div>
+                    <div class="news-image-card__info">
+                      <h2 class="news-image-card__title">
+                        奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                      </h2>
+                      <span class="news-image-card__date">2022/02/01</span>
+                    </div>
+                    <a href="" class="news-image-card__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" role="group">
+                  <div class="news-image-card">
+                    <div class="news-image-card__cover">
+                      <img src="./images/banner1.jpg" alt="">
+                    </div>
+                    <div class="news-image-card__info">
+                      <h2 class="news-image-card__title">
+                        奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                      </h2>
+                      <span class="news-image-card__date">2022/02/01</span>
+                    </div>
+                    <a href="" class="news-image-card__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide" role="group">
+                  <div class="news-image-card">
+                    <div class="news-image-card__cover">
+                      <img src="./images/banner2.jpg" alt="">
+                    </div>
+                    <div class="news-image-card__info">
+                      <h2 class="news-image-card__title">
+                        奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                      </h2>
+                      <span class="news-image-card__date">2022/02/01</span>
+                    </div>
+                    <a href="" class="news-image-card__link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="thum-swiper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" role="group">
+                    <div class="ratio-image ratio-image--1-of-2">
+                      <div class="ratio-image__box">
+                        <img class="ratio-image__source" src="./images/banner1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group">
+                    <div class="ratio-image ratio-image--1-of-2">
+                      <div class="ratio-image__box">
+                        <img class="ratio-image__source" src="./images/banner2.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group">
+                    <div class="ratio-image ratio-image--1-of-2">
+                      <div class="ratio-image__box">
+                        <img class="ratio-image__source" src="./images/banner3.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group">
+                    <div class="ratio-image ratio-image--1-of-2">
+                      <div class="ratio-image__box">
+                        <img class="ratio-image__source" src="./images/banner1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group">
+                    <div class="ratio-image ratio-image--1-of-2">
+                      <div class="ratio-image__box">
+                        <img class="ratio-image__source" src="./images/banner1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="thum-swiper__button thum-swiper__button--prev">
+                <span class="iconfont icon-zuojiantou_huaban" id="thumPrev"></span>
+              </div>
+              <div class="thum-swiper__button thum-swiper__button--next">
+                <span class="iconfont icon-youjiantou_huaban" id="thumNext"></span>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+        <div class="col-1-of-2">
+          <div class="section-news__top">
+            <div class="news-card news-card--new">
+              <div class="news-card__heading">
+                <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                <span class="news-card__date">2022/02/01</span>
+              </div>
+              <p class="news-card__summary">
+                为迎接中国共产党第二十次全国代表大会胜利召开，庆祝中国共产主义青年团成立100周年，进一步凝聚海洋学子团结进取奋勇争先，发挥海洋强国战略的青春力量
+              </p>
+              <a href="" class="news-card__link"></a>
+            </div>
+          </div>
+          <ul class="section-news__list">
+            <li class="section-news__item">
+              <div class="news-card news-card--new">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card news-card--new">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+            <li class="section-news__item">
+              <div class="news-card">
+                <div class="news-card__heading">
+                  <h2 class="news-card__title">奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功... 拷贝</h2>
+                  <span class="news-card__date">2022/02/01</span>
+                </div>
+                <a href="" class="news-card__link"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 科研进展 -->
+  <section class="section-research">
+    <div class="container">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="iconfont icon-bigdata"></span>
+          <span class="heading__text">科研进展</span>
+        </h2>
+        <a href="" class="more-button">查看更多</a>
+      </div>
+
+      <!-- Swiper -->
+      <div class="home-swiper">
+        <div class="swiper" id="researchSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="research-card">
+                <div class="ratio-image ratio-image--2-of-3">
+                  <div class="ratio-image__box">
+                    <img class="ratio-image__source" src="./images/person.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="research-card__info">
+                  <p class="research-card__date">2022/00/02</p>
+                  <p class="research-card__title">
+                    厦门大学海洋分子生态与基因组学研究团队阐述磷限制和C-P有机膦的利用对颗石藻碳埋藏... 率的影响及机制
+                  </p>
+                </div>
+                <a href="" class="research-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research-card">
+                <div class="ratio-image ratio-image--2-of-3">
+                  <div class="ratio-image__box">
+                    <img class="ratio-image__source" src="./images/person.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="research-card__info">
+                  <p class="research-card__date">2022/00/02</p>
+                  <p class="research-card__title">
+                    厦门大学海洋分子生态与基因组学研究团队阐述磷限制和C-P有机膦的利用对颗石藻碳埋藏... 率的影响及机制
+                  </p>
+                </div>
+                <a href="" class="research-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research-card">
+                <div class="ratio-image ratio-image--2-of-3">
+                  <div class="ratio-image__box">
+                    <img class="ratio-image__source" src="./images/person.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="research-card__info">
+                  <p class="research-card__date">2022/00/02</p>
+                  <p class="research-card__title">
+                    厦门大学海洋分子生态与基因组学研究团队阐述磷限制和C-P有机膦的利用对颗石藻碳埋藏... 率的影响及机制
+                  </p>
+                </div>
+                <a href="" class="research-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research-card">
+                <div class="ratio-image ratio-image--2-of-3">
+                  <div class="ratio-image__box">
+                    <img class="ratio-image__source" src="./images/person.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="research-card__info">
+                  <p class="research-card__date">2022/00/02</p>
+                  <p class="research-card__title">
+                    厦门大学海洋分子生态与基因组学研究团队阐述磷限制和C-P有机膦的利用对颗石藻碳埋藏... 率的影响及机制
+                  </p>
+                </div>
+                <a href="" class="research-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research-card">
+                <div class="ratio-image ratio-image--2-of-3">
+                  <div class="ratio-image__box">
+                    <img class="ratio-image__source" src="./images/person.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="research-card__info">
+                  <p class="research-card__date">2022/00/02</p>
+                  <p class="research-card__title">
+                    厦门大学海洋分子生态与基因组学研究团队阐述磷限制和C-P有机膦的利用对颗石藻碳埋藏... 率的影响及机制
+                  </p>
+                </div>
+                <a href="" class="research-card__link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination" id="researchPagination"></div>
+        </div>
+        <div class="home-swiper__button home-swiper__button--prev">
+          <span class="iconfont icon-zuojiantou_huaban" id="researchPrev"></span>
+        </div>
+        <div class="home-swiper__button home-swiper__button--next">
+          <span class="iconfont icon-youjiantou_huaban" id="researchNext"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 讲座报告 -->
+  <section class="section-class">
+    <div class="container">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="iconfont icon-huiyiguanli_1"></span>
+          <span class="heading__text">讲座报告</span>
+        </h2>
+        <a href="" class="more-button">查看更多</a>
+      </div>
+
+      <!-- Swiper -->
+      <div class="home-swiper">
+        <div class="swiper" id="classSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="class-card">
+                <p class="class-card__date">
+                  <span>2021-5-10 星期一</span>
+                  <span>3:00pm-4:00pm</span>
+                </p>
+                <p class="class-card__title">
+                  MEL Seminar: Effect of viral lysis of microorganisms on the organic matter continuum and microbial
+                  activity in the ocean
+                </p>
+                <div class="class-card__info">
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-w_xuesheng-"></span>
+                    <p>报告人：Markus G. Weinbauer, Research Scientist</p>
+                  </div>
+                  <div class="class-card__info-item">
+                    <span class="iconfont icon-dizhi1"></span>
+                    <p>地点：周隆泉楼A3-206 A3-206 Zhou Long Quan Building</p>
+                  </div>
+                </div>
+                <a href="" class="class-card__link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination" id="classPagination"></div>
+        </div>
+        <div class="home-swiper__button home-swiper__button--prev">
+          <span class="iconfont icon-zuojiantou_huaban" id="classPrev"></span>
+        </div>
+        <div class="home-swiper__button home-swiper__button--next">
+          <span class="iconfont icon-youjiantou_huaban" id="classNext"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 通知公告 -->
+  <section class="section-notice">
+    <div class="container">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="iconfont icon-daigonggao"></span>
+          <span class="heading__text">通知公告</span>
+        </h2>
+        <a href="" class="more-button">查看更多</a>
+      </div>
+
+      <!-- Swiper -->
+      <div class="home-swiper">
+        <div class="swiper" id="noticeSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="notice-card">
+                <p class="notice-card__date">
+                  <span class="notice-card__day">03</span>
+                  <span class="notice-card__month">2022/03</span>
+                </p>
+                <div class="notice-card__info">
+                  <div class="notice-card__tags">
+                    <span>综合</span>
+                    <span>党建</span>
+                  </div>
+                  <p class="notice-card__title">
+                    奋进新征程，一起向“蔚”来 ——“蔚蓝之约”海洋学科研究生会交流论坛成功举办
+                  </p>
+                </div>
+                <a href="" class="notice-card__link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination" id="noticePagination"></div>
+        </div>
+        <div class="home-swiper__button home-swiper__button--prev">
+          <span class="iconfont icon-zuojiantou_huaban" id="noticePrev"></span>
+        </div>
+        <div class="home-swiper__button home-swiper__button--next">
+          <span class="iconfont icon-youjiantou_huaban" id="noticeNext"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题网站 -->
+  <section class="section-websit">
+    <div class="container">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="iconfont icon-hetongdengji"></span>
+          <span class="heading__text">专题网站</span>
+        </h2>
+        <a href="" class="more-button">查看更多</a>
+      </div>
+
+      <!-- Swiper -->
+      <div class="home-swiper">
+        <div class="swiper" id="websitSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-1.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-3.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-4.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-1.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/website-2.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination" id="websitPagination"></div>
+        </div>
+        <div class="home-swiper__button home-swiper__button--prev">
+          <span class="iconfont icon-zuojiantou_huaban" id="websitPrev"></span>
+        </div>
+        <div class="home-swiper__button home-swiper__button--next">
+          <span class="iconfont icon-youjiantou_huaban" id="websitNext"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="row">
+          <div class="col-2-of-5">
+            <div class="footer__heading">
+              <span class="iconfont icon-gengduo-2"></span>
+              <p>快捷功能</p>
+            </div>
+            <div class="footer__fast-links">
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+              <a href="">教师后台登录</a>
+            </div>
+          </div>
+          <div class="col-2-of-5">
+            <div class="footer__heading">
+              <span class="iconfont icon-hezuoguanxi"></span>
+              <p>友情链接</p>
+            </div>
+            <ul class="footer__selector">
+              <li class="item">
+                <div class="custom-selector">
+                  <div class="custom-selector__input">
+                    <p class="custom-selector__placeholder">校内链接</p>
+                  </div>
+                  <nav class="custom-selector__options">
+                    <a href="">国家社会科学基金科研创新服务管理平台</a>
+                    <a href="">链接2</a>
+                    <a href="">链接3</a>
+                    <a href="">链接4</a>
+                  </nav>
+                </div>
+              </li>
+              <li class="item">
+                <div class="custom-selector">
+                  <div class="custom-selector__input">
+                    <p class="custom-selector__placeholder">院内链接</p>
+                  </div>
+                  <nav class="custom-selector__options">
+                    <a href="">链接1</a>
+                    <a href="">链接2</a>
+                    <a href="">链接3</a>
+                    <a href="">链接4</a>
+                  </nav>
+                </div>
+              </li>
+              <li class="item">
+                <div class="custom-selector">
+                  <div class="custom-selector__input">
+                    <p class="custom-selector__placeholder">其他链接</p>
+                  </div>
+                  <nav class="custom-selector__options">
+                    <a href="">链接1</a>
+                    <a href="">链接2</a>
+                    <a href="">链接3</a>
+                    <a href="">链接4</a>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1-of-5">
+            <div class="footer__heading">
+              <p>关注我们</p>
+            </div>
+            <div class="footer__qr">
+              <img src="./images/qr-code.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>
+        版权所有 © 2022 厦门大学海洋与地球学院 地址：厦门市翔安区翔安南路4221号希平楼C2-204（361102） 电话：0592-2182374 传真：0592-2183064
+        邮箱：coestd(at)xmu.edu.cn
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/wow.js"></script>
+  <script src="./js/jquery.extends.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/theme.js"></script>
+  <script>
+    const bannerSwiper = new Swiper('#bannerSwiper', {
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 700,
+      allowTouchMove: true,
+      lazy: {
+        loadPrevNext: true,
+        loadPrevNextAmount: 3,
+      },
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 'auto',
+      pagination: {
+        el: '#bannerPagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '#bannerNext',
+        prevEl: '#bannerPrev',
+      },
+    });
+
+
+    const swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    const swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiper,
+      },
+      navigation: {
+        nextEl: "#thumNext",
+        prevEl: "#thumPrev",
+      },
+    });
+
+
+    const classSwiper = new Swiper('#classSwiper', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+      grid: {
+        fill: "row",
+        rows: 3,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+        },
+        1280: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 45,
+          grid: {
+            fill: "row",
+            rows: 1,
+          },
+        },
+      },
+      pagination: {
+        el: '#classPagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#classNext',
+        prevEl: '#classPrev',
+      },
+    });
+
+    const researchSwiper = new Swiper('#researchSwiper', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 45,
+        },
+      },
+      pagination: {
+        el: '#researchPagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#researchNext',
+        prevEl: '#researchPrev',
+      },
+    });
+
+    const noticeSwiper = new Swiper('#noticeSwiper', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+      grid: {
+        fill: "row",
+        rows: 4,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
+          grid: {
+            fill: "row",
+            rows: 3,
+          },
+        },
+        1280: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 45,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+        },
+      },
+      pagination: {
+        el: '#noticePagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#noticeNext',
+        prevEl: '#noticePrev',
+      },
+    });
+
+    const websitSwiper = new Swiper('#websitSwiper', {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      breakpoints: {
+        600: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      },
+      pagination: {
+        el: '#websitPagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#websitNext',
+        prevEl: '#websitPrev',
+      },
+    });
+
+    $(".custom-selector").popover({
+      title: '.custom-selector__input',
+      content: '.custom-selector__options'
+    })
+
+    $('.popover').popover({
+      title: '.popover__title',
+      content: '.popover__content'
+    });
+
+
+    window.onresize = function () {
+      bannerSwiper.update();
+    }
+  </script>
+</body>
+
+</html>
