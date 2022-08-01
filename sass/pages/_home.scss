@@ -1,0 +1,265 @@
+.section-banner {
+  position: relative;
+  overflow: hidden;
+
+  .swiper-slide {
+    width: 82vw;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 2.5rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: $color-white;
+    margin: 0 0.6rem !important;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $color-primary;
+    }
+  }
+
+
+  &__button {
+    width: 8.5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba($color: #000000, $alpha: .5);
+
+    .iconfont {
+      @include absCenter;
+      font-size: 5rem;
+      color: $color-white;
+      opacity: .8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--prev {
+      left: 0;
+      text-align: right;
+
+      .iconfont {
+        left: 65%;
+      }
+    }
+
+    &--next {
+      right: 0;
+      text-align: left;
+
+      .iconfont {
+        left: 35%;
+      }
+    }
+  }
+}
+
+.section-news {
+  padding: 5rem 0;
+
+  &__top {
+    margin-bottom: 2.3rem;
+  }
+
+  &__list {
+    border-top: 1px solid $color-border;
+  }
+
+  &__item {
+    list-style: none;
+    margin-top: 2.3rem;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .thum-swiper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8rem;
+    z-index: 999;
+    padding: 1.7rem 10rem;
+    background-color: rgba($color: $color-black, $alpha: 0.5);
+
+    @include respond(tab-port) {
+      padding: 1.7rem 6rem;
+    }
+
+    @include respond(phone) {
+      padding: 1rem 2rem;
+    }
+
+    &__button {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: rgba($color: $color-white, $alpha: 0.5);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: 0;
+      z-index: 1000;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+
+
+      @include respond(tab-port) {
+        display: none;
+      }
+
+      .iconfont {
+        @include absCenter;
+        font-size: 2rem;
+        color: $color-white;
+        opacity: .8;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &--prev {
+        left: 3.5rem;
+      }
+
+      &--next {
+        right: 3.5rem;
+      }
+    }
+  }
+
+  .mySwiper {
+    padding: 4px;
+    overflow: hidden;
+
+    .swiper-slide-thumb-active {
+      outline: 4px solid $color-primary;
+    }
+  }
+}
+
+.section-research {
+  padding: 5rem 0;
+}
+
+.section-class {
+  padding: 5rem 0;
+}
+
+.section-notice {
+  padding: 5rem 0;
+}
+
+.section-websit {
+  padding: 5rem 0;
+}
+
+// home
+.home-swiper {
+  position: relative;
+
+  .swiper {
+    overflow: visible;
+    overflow-x: hidden;
+    position: static;
+    padding: 4rem 0;
+
+    .swiper-slide {
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: -5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .swiper-pagination-bullet {
+        width: 2.7rem;
+        height: 2.2rem;
+        opacity: 1;
+        background: url(../images/fish.png) no-repeat center center / cover;
+        margin: 0 1rem !important;
+        transition: all .3s ease-in-out;
+
+        &.swiper-pagination-bullet-active {
+          width: 3.4rem;
+          height: 2.9rem;
+          background: url(../images/fish-light.png) no-repeat center center / cover;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    z-index: 999;
+
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    .iconfont {
+      @include absCenter;
+      font-size: 2rem;
+      color: $color-primary;
+      opacity: .8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--prev {
+      left: -6.5rem;
+      text-align: right;
+    }
+
+    &--next {
+      right: -6.5rem;
+      text-align: left;
+    }
+  }
+
+}

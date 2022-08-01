@@ -1,0 +1,363 @@
+.research-card {
+  position: relative;
+  transition: all .3s ease-in-out;
+  border: 1px solid $color-border;
+
+  &:hover {
+    box-shadow: 0px 16px 28px 4px rgba(33, 33, 33, 0.3500);
+    transform: translateY(-2rem);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 3px;
+      background-color: $color-primary;
+    }
+  }
+
+  &:hover &__title {
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  &__info {
+    padding: 3rem 2rem 2rem 2rem;
+    position: relative;
+    background-color: #F9F9F9;
+    transition: all .3s ease-in-out;
+  }
+
+  &__date {
+    width: 10rem;
+    height: 3.3rem;
+    background: $color-primary;
+    border-radius: 1000px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Times New Roman;
+    font-weight: 600;
+    line-height: 3.3rem;
+    color: $color-white;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    @include omits(2);
+    font-size: 1.6rem;
+    color: $color-title;
+  }
+
+  &__link {
+    @include absolute;
+  }
+}
+
+.class-card {
+  padding: 2.5rem 3rem;
+  position: relative;
+  background-color: #F9F9F9;
+  border: 1px solid $color-border;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 16px 28px 4px rgba(33, 33, 33, 0.3500);
+    transform: translateY(-2rem);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 3px;
+      background-color: $color-primary;
+    }
+  }
+
+  &:hover &__title {
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 2rem;
+      color: $color-primary;
+      font-family: Times New Roman;
+      font-weight: 400;
+    }
+  }
+
+  &__title {
+    @include omits(2);
+    font-size: 1.6rem;
+    color: $color-title;
+    line-height: 2.8rem;
+    margin-top: 1rem;
+  }
+
+  &__info {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid $color-border;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+
+    span {
+      flex: none;
+      width: 22px;
+      height: 22px;
+      background: $color-primary;
+      border-radius: 50%;
+      margin-right: 0.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      color: $color-white;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $color-content;
+    }
+  }
+
+  &__link {
+    @include absolute;
+  }
+}
+
+.notice-card {
+  display: flex;
+  padding: 1.5rem 2rem;
+  position: relative;
+  background-color: #F9F9F9;
+  border: 1px solid $color-border;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 16px 28px 4px rgba(33, 33, 33, 0.3500);
+    transform: translateY(-2rem);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 3px;
+      background-color: $color-primary;
+    }
+  }
+
+  &:hover &__title {
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  &:hover &__tags {
+    span {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &__date {
+    color: $color-primary;
+    font-family: Times New Roman;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__day {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__month {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &__info {
+    padding-left: 2rem;
+    margin-left: 2rem;
+    border-left: 1px solid $color-border;
+  }
+
+  &__tags {
+    display: flex;
+    margin-bottom: 1rem;
+
+    span {
+      padding: 0 2rem;
+      height: 2.4rem;
+      line-height: 2.7rem;
+      border: 1px solid $color-primary;
+      font-size: 1.4rem;
+      color: $color-primary;
+      border-radius: 1.2rem;
+      transition: all .3s ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__title {
+    @include omits(2);
+    font-size: 1.6rem;
+    color: $color-title;
+  }
+
+  &__link {
+    @include absolute;
+  }
+}
+
+.news-image-card {
+  position: relative;
+
+  &:hover &__cover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  &:hover &__title {
+    color: $color-primary;
+  }
+
+  &__cover {
+    height: 43rem;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      height: 35rem;
+    }
+
+    @include respond(phone) {
+      height: 20rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &__info {
+    padding: 2.5rem 3rem;
+    background-color: #EBEBEB;
+  }
+
+  &__title {
+    @include omits(1);
+    font-size: 1.8rem;
+    color: $color-title;
+    transition: all .3s ease-in-out;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 4.3rem;
+    background: $color-primary;
+    font-size: 2.2rem;
+    color: $color-white;
+    font-family: Times New Roman;
+    position: absolute;
+    left: 0;
+    top: 1.8rem;
+  }
+
+  &__link {
+    @include absolute;
+  }
+}
+
+
+.news-card {
+  position: relative;
+
+  &:hover &__title {
+    color: $color-secondary;
+  }
+
+  &:hover &__date {
+    color: $color-secondary;
+  }
+
+  &--new &__title::before {
+    content: "new";
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 100px;
+    background-color: $color-secondary;
+    font-size: 1.2rem;
+    color: $color-white;
+    margin-right: 1rem;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @include omits(1);
+    font-size: 1.6rem;
+    color: $color-title;
+    transition: all .3s ease-in-out;
+  }
+
+  &__summary {
+    @include omits(2);
+    font-size: 1.4rem;
+    color: $color-content;
+    margin-top: 1rem;
+  }
+
+  &__date {
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    color: $color-content;
+    font-family: Times New Roman;
+    transition: all .3s ease-in-out;
+  }
+
+  &__link {
+    @include absolute;
+  }
+}
