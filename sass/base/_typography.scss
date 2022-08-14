@@ -29,7 +29,10 @@ body {
   color: $color-grey-dark;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: fontHeavy;
 }
 
@@ -51,54 +54,6 @@ h1, h2, h3, h4 {
   }
 }
 
-// 内页
-.inner-page {
-  display: flex;
-
-  @include respond(tab-port) {
-    flex-direction: column;
-  }
-
-  &--reverse {
-    flex-direction: row-reverse;
-    @include respond(tab-port) {
-      flex-direction: column-reverse;
-    }
-  }
-
-  &--reverse &__left {
-    margin-left: 1.6rem;
-    @include respond(tab-port) {
-      margin-left: 0;
-      margin-top: 1.6rem;
-    }
-  }
-
-  &--reverse &__right {
-    margin-left: 0;
-  }
-
-  &__left {
-    width: 29rem;
-    flex: none;
-    @include respond(tab-port) {
-      width: 100%;
-    }
-  }
-
-  &__right {
-    flex: 1;
-    margin-left: 1.6rem;
-    @include respond(tab-port) {
-      margin-left: 0;
-      margin-top: 1.6rem;
-    }
-  }
-}
-
-.inner-wrapper {
-  padding: 7rem 0;
-}
 
 .heading-box {
   display: flex;

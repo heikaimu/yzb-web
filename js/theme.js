@@ -180,6 +180,16 @@ if ($(".web-header").hasClass("active")) {
   });
 }
 
+$(".custom-selector").popover({
+  title: '.custom-selector__input',
+  content: '.custom-selector__options'
+})
+
+$('.popover').popover({
+  title: '.popover__title',
+  content: '.popover__content'
+});
+
 function toggleWrapper(options) {
   const open = $(options.open);
   const close = $(options.close);
@@ -203,3 +213,193 @@ function toggleWrapper(options) {
     e.stopPropagation();
   });
 }
+
+
+// banner
+$(function () {
+
+
+  const bannerSwiper = new Swiper('#bannerSwiper', {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 700,
+    allowTouchMove: true,
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 3,
+    },
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    pagination: {
+      el: '#bannerPagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '#bannerNext',
+      prevEl: '#bannerPrev',
+    },
+  });
+
+
+  const swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper,
+    },
+    navigation: {
+      nextEl: "#thumNext",
+      prevEl: "#thumPrev",
+    },
+  });
+
+
+  const classSwiper = new Swiper('#classSwiper', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 15,
+    grid: {
+      fill: "row",
+      rows: 3,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+        grid: {
+          fill: "row",
+          rows: 2,
+        },
+      },
+      1280: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 45,
+        grid: {
+          fill: "row",
+          rows: 1,
+        },
+      },
+    },
+    pagination: {
+      el: '#classPagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#classNext',
+      prevEl: '#classPrev',
+    },
+  });
+
+  const researchSwiper = new Swiper('#researchSwiper', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 15,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      1280: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 45,
+      },
+    },
+    pagination: {
+      el: '#researchPagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#researchNext',
+      prevEl: '#researchPrev',
+    },
+  });
+
+  const noticeSwiper = new Swiper('#noticeSwiper', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 15,
+    grid: {
+      fill: "row",
+      rows: 4,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+        grid: {
+          fill: "row",
+          rows: 3,
+        },
+      },
+      1280: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 45,
+        grid: {
+          fill: "row",
+          rows: 2,
+        },
+      },
+    },
+    pagination: {
+      el: '#noticePagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#noticeNext',
+      prevEl: '#noticePrev',
+    },
+  });
+
+  const websitSwiper = new Swiper('#websitSwiper', {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    breakpoints: {
+      600: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      1280: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+    pagination: {
+      el: '#websitPagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#websitNext',
+      prevEl: '#websitPrev',
+    },
+  });
+
+  const innerBannerSwiper = new Swiper('#innerBannerSwiper', {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 700,
+    allowTouchMove: true,
+    loop: true,
+    slidesPerView: 'auto',
+    pagination: {
+      el: '#innerBannerPagination',
+      clickable: true
+    },
+  });
+
+})
