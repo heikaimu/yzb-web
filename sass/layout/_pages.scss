@@ -1,0 +1,29 @@
+// 内页
+.inner-page {
+  top: -5.8rem;
+  position: relative;
+  padding-bottom: 2rem;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    flex: none;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    overflow: hidden;
+
+    &--top {}
+
+    &--bottom {
+      padding-left: 4rem;
+    }
+  }
+}
