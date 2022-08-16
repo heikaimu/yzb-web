@@ -367,6 +367,10 @@
   justify-content: space-between;
   position: relative;
 
+  @include respond(tab-port) {
+    display: block;
+  }
+
   &:hover &__left {
     p {
       color: $color-primary;
@@ -379,7 +383,9 @@
   }
 
   &:hover &__right {
-    h2 ,p {
+
+    h2,
+    p {
       color: $color-primary;
     }
   }
@@ -393,6 +399,11 @@
     padding-right: 7rem;
     position: relative;
 
+    @include respond(tab-port) {
+      padding-right: 0;
+      flex-direction: row;
+    }
+
     &::after {
       content: "";
       width: 5rem;
@@ -401,6 +412,10 @@
       position: absolute;
       right: 0;
       top: 2.5rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     p {
@@ -424,9 +439,19 @@
     flex: none;
     padding-left: 2.4rem;
 
+    @include respond(tab-port) {
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
     .cover {
       width: 18rem;
       height: 10rem;
+
+      @include respond(tab-port) {
+        width: auto;
+        height: 20rem;
+      }
 
       img {
         display: block;
@@ -441,12 +466,20 @@
     padding-left: 2.4rem;
     height: 10rem;
 
+    @include respond(tab-port) {
+      padding-left: 0;
+    }
+
 
     h2 {
       @include omits(1);
       font-size: 1.6rem;
       color: $color-title;
       margin-bottom: 2.5rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 1rem;
+      }
     }
 
     p {
@@ -459,4 +492,62 @@
   &__link {
     @include absolute;
   }
+}
+
+.teacher-card {
+  position: relative;
+  display: flex;
+
+  &__cover {
+    flex: none;
+    width: 15rem;
+    height: 20rem;
+  }
+
+  &__info {
+    flex: 1;
+    padding-left: 3.5rem;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    color: $color-primary;
+    margin-bottom: 1.2rem;
+  }
+
+  &__tag {
+    @include omits(1);
+    font-size: 1.6rem;
+    color: $color-primary;
+    margin-bottom: 0.8rem;
+  }
+
+  &__more-box {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      height: 1px;
+      flex: 1;
+      border-bottom: 1px solid $color-primary;
+    }
+  }
+
+  &__more {
+    display: block;
+    padding: 0 2rem;
+    border-radius: 100px;
+    line-height: 3rem;
+    background: $color-primary;
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+
+
+
+  &__link {
+    @include absolute;
+  }
+
 }

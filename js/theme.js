@@ -1,8 +1,8 @@
 /*
  * @Date: 2022-04-08 17:12:42
  * @LastEditors: Yaowen Liu
- * @LastEditTime: 2022-06-22 10:51:22
- * @FilePath: /school-gitlab/t-smart/js/theme.js
+ * @LastEditTime: 2022-08-16 14:50:28
+ * @FilePath: /haidi/js/theme.js
  */
 
 $(function () {
@@ -364,28 +364,46 @@ $(function () {
     },
   });
 
-  const websitSwiper = new Swiper('#websitSwiper', {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    breakpoints: {
-      600: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+
+
+  $(".website-tab__item").each(function () {
+    const index = $(this).index();
+    new Swiper('#websitSwiper' + index, {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      breakpoints: {
+        600: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
       },
-      1280: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+      pagination: {
+        el: '#websitPagination' + index,
+        clickable: true,
       },
-    },
-    pagination: {
-      el: '#websitPagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '#websitNext',
-      prevEl: '#websitPrev',
-    },
-  });
+      navigation: {
+        nextEl: '#websitNext' + index,
+        prevEl: '#websitPrev' + index,
+      },
+    });
+  })
+
+  $(".website-tab__title p").each(function() {
+    $(this).click(function() {
+      showWebsite($(this).index());
+    })
+  })
+
+  showWebsite(0);
+
+  function showWebsite(index) {
+    $(".website-tab__title p").eq(index).addClass('active').siblings('p').removeClass('active');
+    $(".website-tab__item").eq(index).addClass('active').siblings('li').removeClass('active');
+  }
 
   const innerBannerSwiper = new Swiper('#innerBannerSwiper', {
     autoplay: {

@@ -2,7 +2,7 @@
  * @Author: Yaowen Liu
  * @Date: 2022-03-07 09:45:10
  * @LastEditors: Yaowen Liu
- * @LastEditTime: 2022-08-15 09:15:35
+ * @LastEditTime: 2022-08-16 14:16:14
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -230,85 +230,174 @@
           </div>
 
           <div class="inner-page__medium--bottom">
+
+            <!-- 搜索条件 -->
+            <div class="search-query">
+              <div class="search-query__item">
+                <h4>系部/院区检索：</h4>
+                <nav class="search-query__list" _name="department">
+                  <span _value="">全部</span>
+                  <span _value="1">条件1</span>
+                  <span _value="2">条件2</span>
+                </nav>
+              </div>
+              <div class="search-query__item">
+                <h4>职称筛选：</h4>
+                <nav class="search-query__list" _name="position">
+                  <span _value="">全部</span>
+                  <span _value="1">条件1</span>
+                  <span _value="2">条件2</span>
+                </nav>
+              </div>
+              <div class="search-query__item">
+                <h4>姓氏筛选：</h4>
+                <nav class="search-query__list" _name="name">
+                  <span _value="">全部</span>
+                  <span _value="1">条件1</span>
+                  <span _value="2">条件2</span>
+                </nav>
+              </div>
+            </div>
+
             <!-- 内容 -->
-            <ul class="inner-news-list">
-              <li class="item">
-                <div class="inner-news-card">
-                  <div class="inner-news-card__left">
-                    <p>12-14</p>
-                    <span class="iconfont icon-youjiantou"></span>
+            <ul class="inner-teacher-list">
+              <li class="item" _department="1" _position="1" _name="1">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
                   </div>
-                  <div class="inner-news-card__right">
-                    <h2>促交流、凝共识、谋发展——海洋与地球学院成功举办学术交流暨学科发展研讨会</h2>
-                    <p>
-                      为进一步加强农业科技领域的国际合作与交流，搭建全球农业科技创新成果展示平台，表彰获得第十二届大北农科技奖的优秀科技成果和专家，第十二届大北农科技奖颁奖大会暨中关村全球农业科技创新论坛将于5月28为进一步加强农业科技领域的国际合作与交流，搭建全球农业科技创新成果展示平台，表彰获得第十二届大北农科技奖的优秀科技成果和专家，第十二届大北农科技奖颁奖大会暨中关村全球农业科技创新论坛将于5月28-29日在京隆重召开。
-                    </p>
-                  </div>
-                  <a href="" class="inner-news-card__link"></a>
-                </div>
-              </li>
-              <li class="item">
-                <div class="inner-news-card">
-                  <div class="inner-news-card__left">
-                    <p>12-14</p>
-                    <span class="iconfont icon-youjiantou"></span>
-                  </div>
-                  <div class="inner-news-card__medium">
-                    <div class="cover">
-                      <img src="./images/banner1.jpg" alt="">
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">1-1-1</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
                     </div>
                   </div>
-                  <div class="inner-news-card__right">
-                    <h2>促交流、凝共识、谋发展——海洋与地球学院成功举办学术交流暨学科发展研讨会</h2>
-                    <p>
-                      为进一步加强农业科技领域的国际合作与交流，搭建全球农业科技创新成果展示平台，表彰获得第十二届大北农科技奖的优秀科技成果和专家，第十二届大北农科技奖颁奖大会暨中关村全球农业科技创新论坛将于5月28-29日在京隆重召开。
-                    </p>
-                  </div>
-                  <a href="" class="inner-news-card__link"></a>
+                  <a href="" class="teacher-card__link"></a>
                 </div>
               </li>
-              <li class="item">
-                <div class="inner-news-card">
-                  <div class="inner-news-card__left">
-                    <p>12-14</p>
-                    <span class="iconfont icon-youjiantou"></span>
+              <li class="item" _department="2" _position="1" _name="1">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
                   </div>
-                  <div class="inner-news-card__right">
-                    <h2>促交流、凝共识、谋发展——海洋与地球学院成功举办学术交流暨学科发展研讨会</h2>
-                    <p>
-                      为进一步加强农业科技领域的国际合作与交流，搭建全球农业科技创新成果展示平台，表彰获得第十二届大北农科技奖的优秀科技成果和专家，第十二届大北农科技奖颁奖大会暨中关村全球农业科技创新论坛将于5月28-29日在京隆重召开。
-                    </p>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">2-1-1</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
                   </div>
-                  <a href="" class="inner-news-card__link"></a>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="1" _position="2" _name="1">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">1-2-1</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="1" _position="1" _name="2">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">1-1-2</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="2" _position="2" _name="1">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">2-2-1</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="1" _position="2" _name="2">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">1-2-2</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="2" _position="1" _name="2">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">2-2-2</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
+                </div>
+              </li>
+              <li class="item" _department="2" _position="2" _name="2">
+                <div class="teacher-card card">
+                  <div class="teacher-card__cover cover">
+                    <img src="./images/person.jpg" alt="">
+                  </div>
+                  <div class="teacher-card__info">
+                    <h2 class="teacher-card__title">2-1-2</h2>
+                    <p class="teacher-card__tag">职称：特聘教授职称</p>
+                    <p class="teacher-card__tag">职务：系主任</p>
+                    <p class="teacher-card__tag">海洋化学与地球化学系</p>
+                    <div class="teacher-card__more-box">
+                      <p class="teacher-card__more">查看更多</p>
+                    </div>
+                  </div>
+                  <a href="" class="teacher-card__link"></a>
                 </div>
               </li>
             </ul>
-
-            <!-- 分页器 -->
-            <div class="pb_sys_common pb_sys_normal pb_sys_style1">
-              <span class="p_pages">
-                <span class="p_first_d p_fun_d">首页</span>
-                <span class="p_prev_d p_fun_d">上页</span>
-                <span class="p_no_d">1</span>
-                <span class="p_no"><a href="jdyw/87.htm">2</a></span>
-                <span class="p_no"><a href="jdyw/86.htm">3</a></span>
-                <span class="p_no"><a href="jdyw/85.htm">4</a></span>
-                <span class="p_no"><a href="jdyw/84.htm">5</a></span>
-                <span class="p_dot">...</span>
-                <span class="p_no"><a href="jdyw/1.htm">88</a></span>
-                <span class="p_next p_fun"><a href="jdyw/87.htm">下页</a></span>
-                <span class="p_last p_fun"><a href="jdyw/1.htm">尾页</a></span>
-              </span>
-              <span class="p_t">第</span>
-              <span class="p_goto">
-                <script language="javascript" src="/system/resource/js/gotopage.js"></script>
-                <input type="text" class="p_goto_input" maxlength="10" id="u6_goto" value="1"
-                  onkeydown='if(event.keyCode==13){_simple_list_gotopage_fun(88,"u6_goto",2)}' spellcheck="false" />
-              </span>
-              <span class="p_t">/88页</span>
-              <span class="p_goto"><a href="javascript:;"
-                  onclick='_simple_list_gotopage_fun(88,"u6_goto",2)'>跳转</a></span>
-            </div>
 
           </div>
         </div>
@@ -410,6 +499,63 @@
   <script src="./js/jquery.extends.js"></script>
   <script src="./js/common.js"></script>
   <script src="./js/theme.js"></script>
+
+  <script>
+
+    $(function () {
+      const form = {
+        department: '',
+        position: '',
+        name: ''
+      }
+
+      $(".search-query__list").each(function () {
+        const key = $(this).attr('_name');
+        const querys = $(this).find('span');
+        querys.each(function () {
+          const q = $(this);
+          const val = q.attr('_value');
+
+          if (!val) {
+            q.addClass('active').siblings('span').removeClass('active');
+          }
+
+          q.click(function () {
+            q.addClass('active').siblings('span').removeClass('active');
+            form[key] = val;
+            showCard();
+          })
+
+        })
+      })
+
+      function showCard() {
+        $(".inner-teacher-list .item").each(function () {
+          const attrs = {
+            department: $(this).attr('_department'),
+            position: $(this).attr('_position'),
+            name: $(this).attr('_name')
+          }
+
+          let show = true;
+          Object.keys(form).forEach(key => {
+            const val = form[key];
+            if (val && attrs[key] !== val) {
+              show = false;
+            }
+          })
+
+          if (show) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        })
+      }
+
+    })
+
+  </script>
 </body>
 
 </html>

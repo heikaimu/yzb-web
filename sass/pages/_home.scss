@@ -176,7 +176,8 @@
 }
 
 .section-websit {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 // home
@@ -262,4 +263,50 @@
     }
   }
 
+}
+
+
+.website-tab {
+  &__title {
+    display: flex;
+    position: absolute;
+    left: 26rem;
+    top: 1.2rem;
+
+    @include respond(tab-land) {
+      left: 0;
+      top: auto;
+      bottom: -4rem;
+    }
+
+    p {
+      padding: 0 2rem;
+      border-radius: 100px;
+      font-size: 1.4rem;
+      line-height: 3.2rem;
+      color: $color-primary;
+      background-color: #EBEBEB;
+      cursor: pointer;
+      &.active {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.3400);
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  &__list {
+    li {
+      list-style: none;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
 }

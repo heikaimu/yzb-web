@@ -34,7 +34,7 @@
 
 
 .article-details {
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   background-color: $color-white;
 
   @include respond(tab-port) {
@@ -102,5 +102,147 @@
     padding: 10px 0;
     font-size: 16px;
     color: $color-primary;
+  }
+}
+
+.inner-publish {
+  width: 32rem;
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &__heading {
+    line-height: 5.5rem;
+    padding-left: 2rem;
+    background-color: $color-primary;
+    font-size: 2rem;
+    color: $color-white;
+  }
+
+  &__list {
+    padding: 2rem;
+    background-color: #EDEDED;
+
+    .item {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      a {
+        @include omits(2);
+        font-size: 1.6rem;
+        color: $color-title;
+        margin-bottom: 1rem;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        color: $color-content;
+
+        &::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          border-bottom: 1px solid $color-border;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.article-pagination {
+  width: 32rem;
+  margin-top: 3rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    display: block;
+  }
+
+  &__button {
+    display: block;
+    padding: 2rem 3rem;
+    background-color: #EDEDED;
+    border-top: 3px solid $color-primary;
+
+    font-size: 1.6rem;
+    color: $color-title;
+
+    margin-bottom: 2rem;
+
+    strong {
+      display: block;
+      font-size: 1.6rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    &--prev {}
+
+    &--next {}
+  }
+}
+
+.inner-teacher-list {
+  padding: 4rem 0;
+  @include gridList(6rem, 2, 2, 1);
+}
+
+.search-query {
+  padding: 0 2rem;
+  background-color: #E2EAF3;
+
+  &__item {
+    display: flex;
+    padding: 1rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($color: $color-border, $alpha: 0.4);
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+
+    h4 {
+      width: 12rem;
+      flex: none;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: $color-primary;
+      margin: 0.4rem 0;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        padding: 0 2rem;
+        border-radius: 100px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $color-content;
+        margin: 0.4rem;
+        cursor: pointer;
+
+        &.active {
+          color: $color-primary;
+          outline: 1px solid $color-primary;
+        }
+      }
+    }
   }
 }
