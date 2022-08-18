@@ -54,43 +54,6 @@ h4 {
   }
 }
 
-
-.heading-box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3.5rem;
-  position: relative;
-}
-
-.heading {
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 23.4rem;
-    height: 6.7rem;
-    background: url(../images/heading-bg.png) no-repeat center center / cover;
-    position: absolute;
-    left: 0;
-    bottom: 1.8rem;
-    z-index: 0;
-  }
-
-  .iconfont {
-    font-size: 3.2rem;
-    color: $color-primary;
-  }
-
-  &__text {
-    font-size: 3.2rem;
-    color: $color-title;
-    font-weight: 600;
-    margin-left: 0.5rem;
-    line-height: 1;
-  }
-}
-
 .card {
   .cover {
     overflow: hidden;
@@ -108,9 +71,4 @@ h4 {
       transform: scale(1.1);
     }
   }
-}
-
-.test-blank {
-  height: 200px;
-  background-color: red;
 }

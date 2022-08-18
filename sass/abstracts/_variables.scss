@@ -21,49 +21,7 @@ $color-warning: #E6A23C;
 $default-font-size: 1.6rem;
 
 // GRID
-$grid-width: 160rem;
+$grid-width: 120rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
-
-// web nav
-$nav1-size: 1.8rem;
-$nav1-color: $color-white;
-$nav1-color-active: $color-primary;
-$nav1-bg: transparent;
-$nav1-bg-active: linear-gradient(to bottom, $color-white, transparent);
-
-$nav2-wrapper: $color-white;
-$nav2-size: 1.8rem;
-$nav2-color: $color-title;
-$nav2-color-active: $color-white;
-$nav2-bg: transparent;
-$nav2-bg-active: $color-primary;
-
-$nav3-wrapper: $color-white;
-$nav3-size: 1.8rem;
-$nav3-color: $color-title;
-$nav3-color-active: $color-white;
-$nav3-bg: transparent;
-$nav3-bg-active: $color-primary;
-
-// side nav
-$side-nav1-size: 1.8rem;
-$side-nav1-color: $color-title;
-$side-nav1-color-active: $color-white;
-$side-nav1-bg: #E2EAF3;
-$side-nav1-bg-active: #1D6FC0;
-
-$side-nav2-wrapper: $color-white;
-$side-nav2-size: 1.6rem;
-$side-nav2-color: $color-title;
-$side-nav2-color-active: $color-primary;
-$side-nav2-bg: rgb(196, 220, 238);
-$side-nav2-bg-active: rgb(167, 196, 227);
-
-$side-nav3-wrapper: $color-white;
-$side-nav3-size: 1.8rem;
-$side-nav3-color: $color-title;
-$side-nav3-color-active: $color-white;
-$side-nav3-bg: transparent;
-$side-nav3-bg-active: $color-primary;
